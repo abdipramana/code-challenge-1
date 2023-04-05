@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "lincdApp": "http://lincd.org/ont/lincd-app/"
+  },
+  "@id": "http://localhost:4000",
+  "lincdApp:ownPackage": {
+    "@id": "https://data.lincd.org/module/here"
+  }
+}

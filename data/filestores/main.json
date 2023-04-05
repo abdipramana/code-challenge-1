@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "houses": "http://lincd.org/ont/houses/",
+    "this": "http://localhost:4000/data/node-file-store/main/"
+  },
+  "@graph": [
+    {
+      "@id": "this:0",
+      "@type": "houses:House",
+      "houses:price": "35000000",
+      "houses:propertyType": "Apartment",
+      "houses:title": "Roselands House",
+      "houses:image" : "https://rimh2.domainstatic.com.au/yRw8zfRwJAuVnMWwPJ4Jjmhq9ls=/fit-in/1920x1080/filters:format(jpeg):quality(80):no_upscale()/2017604720_4_1_220922_110626-w4096-h1933"
+    },
+    {
+      "@id": "this:1",
+      "@type": "houses:House",
+      "houses:price": "20000000",
+      "houses:propertyType": "House",
+      "houses:title": "Woodlandside",
+      "houses:image" : "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdfa535f0-f32b-11e8-8c84-29b2667b0b46.jpg?crop=5640%2C3173%2C45%2C584&resize=1500"
+    },
+    {
+      "@id": "this:2",
+      "@type": "houses:House",
+      "houses:price": "44000000",
+      "houses:propertyType": "Villa",
+      "houses:title": "The Old Lighthouse",
+      "houses:image": "https://assets2.cbsnewsstatic.com/hub/i/r/2017/04/06/e323071b-533c-4adf-8a5e-a6f09d4b0deb/thumbnail/1240x824/35b3bdfbec7a81623064b89843a065d3/round-island-01.jpg",
+      "houses:isNew": "true"
+    },
+    {
+      "@id": "this:3",
+      "@type": "houses:House",
+      "houses:price": "22000000",
+      "houses:propertyType": "Apartment",
+      "houses:title": "Cosmo's House",
+      "houses:image": "https://b2986761.smushcdn.com/2986761/wp-content/uploads/2018/06/Old-Town-Park-2-Bed-Living-Room.jpg?lossy=1&strip=1&webp=1",
+      "houses:isNew": "true"
+    }
+  ]
+}
