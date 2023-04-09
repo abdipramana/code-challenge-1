@@ -1,4 +1,4 @@
 module.exports = {
-  cssMode: 'mixed',
-  cacheWebpack:true,
+  cssMode: 'scss-modules',
+  cacheWebpack: true,
 };

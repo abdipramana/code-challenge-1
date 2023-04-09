@@ -2,25 +2,14 @@
   "@context": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "shacl": "http://www.w3.org/ns/shacl#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "lincd": "https://purl.org/on/lincd/",
     "npm": "http://purl.org/on/npm/",
     "lincdm": "https://purl.org/on/lincd/",
     "schema": "http://schema.org/",
-    "houses": "http://lincd.org/ont/houses/",
     "_this": "https://data.lincd.org/module/here/"
   },
   "@graph": [
-    {
-      "@id": "http://lincd.org/ont/house/ExampleClass",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "This is an example class. You can remove or rename it",
-      "rdfs:isDefinedBy": {
-        "@id": "http://lincd.org/ont/house/"
-      },
-      "rdfs:label": "Example Class"
-    },
     {
       "@id": "https://data.lincd.org/module/here",
       "@type": "lincd:Module",
@@ -73,20 +62,8 @@
       ],
       "npm:packageName": "here",
       "npm:version": "0.1.0",
-      "schema:datePublished": "Mon, 03 Apr 2023 04:18:22 GMT",
+      "schema:datePublished": "Sun, 09 Apr 2023 08:10:40 GMT",
       "rdfs:label": "here"
-    },
-    {
-      "@id": "_this:component/housepreview",
-      "@type": "lincd:Component",
-      "rdfs:label": "HousePreview",
-      "lincd:module": {
-        "@id": "https://data.lincd.org/module/here"
-      },
-      "lincd:npmPath": "here/frontend/src/components/HousePreview",
-      "lincd:usesShapeClass": {
-        "@id": "_this:shapeclass/house"
-      }
     },
     {
       "@id": "_this:dependency/@babel/cli/^7.18.10",
@@ -177,96 +154,6 @@
       "@type": "npm:ModuleDependency",
       "npm:packageName": "react",
       "npm:version": "^18.2"
-    },
-    {
-      "@id": "_this:ontology/houses",
-      "@type": "lincd:OntologyFile",
-      "lincd:dataFile": "here/frontend/src/data/houses.json",
-      "lincd:module": {
-        "@id": "https://data.lincd.org/module/here"
-      },
-      "lincd:npmPath": "here/frontend/src/ontologies/houses",
-      "lincd:ontology": {
-        "@id": "http://lincd.org/ont/houses/"
-      },
-      "lincd:prefix": "houses"
-    },
-    {
-      "@id": "_this:shape/house",
-      "@type": "shacl:NodeShape",
-      "shacl:property": [
-        {
-          "@id": "_this:shape/house/title"
-        },
-        {
-          "@id": "_this:shape/house/price"
-        },
-        {
-          "@id": "_this:shape/house/propertytype"
-        },
-        {
-          "@id": "_this:shape/house/image"
-        }
-      ],
-      "shacl:targetClass": {
-        "@id": "houses:House"
-      }
-    },
-    {
-      "@id": "_this:shape/house/image",
-      "rdfs:label": "image",
-      "shacl:maxCount": {
-        "@type": "xsd:integer",
-        "@value": "1"
-      },
-      "shacl:path": {
-        "@id": "houses:image"
-      }
-    },
-    {
-      "@id": "_this:shape/house/price",
-      "rdfs:label": "price",
-      "shacl:maxCount": {
-        "@type": "xsd:integer",
-        "@value": "1"
-      },
-      "shacl:path": {
-        "@id": "houses:title"
-      }
-    },
-    {
-      "@id": "_this:shape/house/propertytype",
-      "rdfs:label": "propertyType",
-      "shacl:maxCount": {
-        "@type": "xsd:integer",
-        "@value": "1"
-      },
-      "shacl:path": {
-        "@id": "houses:propertyType"
-      }
-    },
-    {
-      "@id": "_this:shape/house/title",
-      "rdfs:label": "title",
-      "shacl:maxCount": {
-        "@type": "xsd:integer",
-        "@value": "1"
-      },
-      "shacl:path": {
-        "@id": "houses:title"
-      }
-    },
-    {
-      "@id": "_this:shapeclass/house",
-      "@type": "lincd:ShapeClass",
-      "rdfs:label": "House",
-      "lincd:definesShape": {
-        "@id": "_this:shape/house"
-      },
-      "lincd:module": {
-        "@id": "https://data.lincd.org/module/here"
-      },
-      "lincd:npmPath": "here/frontend/src/shapes/House"
     }
   ],
   "@id": "https://data.lincd.org/graph/here/0.1.0"
