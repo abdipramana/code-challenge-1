@@ -25,6 +25,8 @@ body {
 }
 
 .headlineSection {
+  display: flex;
+  align-items: flex-end;
   margin-bottom: 2rem;
 }
 
@@ -56,4 +58,28 @@ body {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
+}
+
+.filter {
+  margin-left: 3rem;
+
+  button {
+    color: #888B97;
+    background-color: white;
+    font-size: .85rem;
+    border: solid 1px #E0E3EB;
+    margin: 0 .5rem;
+    padding: .75rem 1.2rem;
+    border-radius: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+button.activeFilterButton {
+  color: #10B981;
+  background-color: #D1FAE5;
+  border-color: #D1FAE5;
 }
