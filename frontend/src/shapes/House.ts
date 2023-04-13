@@ -55,4 +55,13 @@ export class House extends Shape {
   set image(val: string) {
     this.overwrite(houses.image, new Literal(val));
   }
+
+  @literalProperty({
+    path: houses.isNew,
+    required: false,
+    maxCount: 1,
+  })
+  get isNew() {
+    return this.getValue(houses.isNew);
+  }
 }

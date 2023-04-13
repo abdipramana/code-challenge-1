@@ -7,7 +7,7 @@ import * as style from './Home.scss.json';
 import Spinner from '../components/Spinner';
 import { HousePreview } from "../components/HousePreview";
 
-const FILTER_DATA = ['All', 'House', 'Villa', 'Apartment'];
+const FILTER_DATA = ['All', 'New', 'House', 'Villa', 'Apartment'];
 
 export default function Home() {
   let [houses, setHouses] = useState<ShapeSet<House>>();
@@ -24,9 +24,11 @@ export default function Home() {
     setFilter(selectedFilter);
   };
 
-  const filteredHouses = houses?.filter(({ propertyType: type }) => {
+  const filteredHouses = houses?.filter(({ propertyType: type, isNew }) => {
     if (filter === 'All') {
       return true;
+    } else if (filter === 'New') {
+      return isNew;
     } else {
       return type === filter;
     }

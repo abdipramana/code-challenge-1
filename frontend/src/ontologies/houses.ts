@@ -28,6 +28,7 @@ export var image: NamedNode = ns('image');
 export var price: NamedNode = ns('price');
 export var title: NamedNode = ns('title');
 export var propertyType: NamedNode = ns('propertyType');
+export var isNew: NamedNode = ns('isNew');
 
 //An extra grouping object so all the entities can be accessed from the prefix/name
 export const houses = {
@@ -36,7 +37,7 @@ export const houses = {
   price,
   title,
   propertyType,
-
+  isNew,
 };
 
 //Registers this ontology to LINCD.JS, so that data loading can be automated amongst other things
